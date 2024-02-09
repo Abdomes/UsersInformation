@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #ccc;
+  font-size: 16px;
+  color: #000;
+}
+
+.subtitle {
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+
+/* Select and Button*/
+.select {
+  display: block; 
+  color: inherit;
+  width: 150px;
+  height: 30px;
+  margin: 0 20px 0 0; 
+  border: 1px solid #aaa;
+  box-shadow: 0 1px 0 1px rgba(0,0,0,.04); 
+  border-radius: 5px;
+  appearance: none;
+}
+.select:hover,.search__input:hover { border-color: #888; } 
+.select:focus,.search__input:focus { 
+  border-color: #aaa; 
+  box-shadow: 0 0 1px 2px rgba(59, 153, 252, .7);
+  color: #222;
+  outline: none; 
+} 
+.select option { 
+  text-align: center;
+} 
+
+.search__input {
+  width: 200px;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  color: inherit;
+  border-radius: 3px; 
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+} 
+
+.search__input:disabled::placeholder {
+  color: red;
+}
+
+.search__input::placeholder {
+  color: #aaa;
+}
+
+/* Resize table */
+
+.resize-handle {
+  display: block;
+  position: absolute;
+  cursor: col-resize;
+  width: 7px;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  border-right: 2px solid transparent;
+}
+
+.resize-handle:hover {
+  border-color: #ccc;
+}
+
+.resize-handle.active {
+  border-color: #517ea5;
+}
